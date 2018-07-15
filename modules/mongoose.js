@@ -1,7 +1,7 @@
 var config = require('./config');
 const uri='mongodb://' + config.dbIpAddress + ':' + config.dbPort + '/'+config.dbData;
 var options = {
-  //.useMongoClient: true,
+  
   //db: { native_parser: true },
   //server: { poolSize: 5 }
   poolSize: 5

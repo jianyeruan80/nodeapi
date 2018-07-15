@@ -19,7 +19,9 @@ var sizes = require('./routes/sizes');
 var categories = require('./routes/categories');
 var items = require('./routes/items');
 var notepads = require('./routes/notepads');
-var orders = require('./routes/orders');
+var otheradmins = require('./routes/otheradmins');
+var otherads = require('./routes/otherads');
+var otherproducts = require('./routes/otherproducts');
 var app = express();
 
 // view engine setup
@@ -55,8 +57,9 @@ app.use('/api/sizes', sizes);
 app.use('/api/categories', categories);
 app.use('/api/items', items);
 app.use('/api/notepads', notepads);
-app.use('/api/orders', orders);
-
+app.use('/api/otheradmins', otheradmins);
+app.use('/api/otherads', otherads);
+app.use('/api/otherproducts', otherproducts);
 
 
 app.use(function(req, res, next) {
@@ -69,7 +72,8 @@ var customerError={
           "60002":"Server is error !",
           "60003":"Token is expires or error !",
           "60004":"Old password do not match !",
-          "60005":"Password do not match !"
+          "60005":"Password do not match !",
+          "60006":"User and Password not match !"
     
          
  }

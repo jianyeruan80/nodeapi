@@ -4,9 +4,9 @@ module.exports = {
 'ivStr':"befa8d99dac542e0",
 'appIpAddress':"http://127.0.0.1:10087/",
 'appPort':"10088",
-'dbPort':"27017",
+'dbPort':"27272",//27017
 'dbData': 'notepad',
-"dbIpAddress":'mongo',//mongo
+"dbIpAddress":'service520.com',//mongo
 "zoneTime":0,
 "environment":"",
 "splitStr":"/",
